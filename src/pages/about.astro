@@ -1,0 +1,200 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="A propos | Laurent Lesage" description="A propos Laurent Lesage">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos"
+				tagline="Découvrez mon parcours, mes compétences."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Laurent Lesage au travail"
+				/>
+				<span style="font-size: 1rem;">Image par <a href="https://pixabay.com/fr/users/freephotocc-2275370/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280537">Free Photos</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280537">Pixabay</a></span>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Contexte</h2>
+				<div class="content">
+
+					<h3 class="section-title">Ma personnalité</h3>
+					<p>
+						Je suis une personne organisée, logique et curieuse. Je suis autonome sur les missions qui me sont confiées. 
+						J'aime également travailler en équipe et échanger sur un projet.
+					</p><br>
+
+					<h3 class="section-title">Mes loisirs</h3>
+					<p>
+						J'affectionne les jeux de sociétés particulièrement ceux de stratégie, gestion et coopératif.
+						Je pratique la randonnée, la marche nordique et parfois du city foot avec des amis.
+						Enfin je suis portraitiste animalier et humain, mon domaine de prédilection est le pastel sec.
+					</p><br>
+
+					<h3 class="section-title">Mon passé professionnel</h3>
+					<p>
+						Après une quinzaine d'années passées dans le secteur du bâtiment (Architecture, Urbanisme, Bureaux d'étude fluides) en tant que dessinateur
+						projeteur et BIM modeleur, j'avais besoin de changement et de nouveaux challenges. Depuis très longtemps je voulais apprendre à coder, 
+						j'ai donc décidé de sauter le pas et faire une reconversion professionnelle en faisant une formation de développeur web (titre professionnel
+						de nivreau 5 obtenue en 2020). Ensuite, je me suis orienté vers une formation certifiante de niveau 6 pour une spécialisation backend de développeur
+						d'application PHP/symfony chez Openclassrooms.
+					</p><br>
+
+					<h3 class="section-title">Mon objectif professionnel</h3>
+					<p>
+						Je recherche une équipe qui pourrait m'accueillir sur un poste de développeur php / Symfony.
+						Ma recherche géographique est sur Perpignan en présentiel, Toulouse ou Montpellier en télétravail
+						hybride ou télétravail temps plein France entière.
+					</p><br>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Formations</h2>
+				<div class="content">
+					<h3 class="section-title">Certification professionnelle de développeur concepteur logiciel (niveau 6)</h3>
+					<p>Centre de formation (à distance) : <strong>Openclassrooms - Paris</strong></p>
+					<p>Parcours de formation: Développeur d'application php/symfony</p>
+					<p>Certification obtenu en janvier 2023</p><br>
+					<div class="btn-link-info"><a href="https://www.francecompetences.fr/recherche/rncp/35976/"> voir le référentielle de la certification</a></div><br>
+
+					<h3 class="section-title">Titre professionnel développeur web et web mobile (niveau 5)</h3>
+					<p>Centre de formation (à distance) : <strong> Adrar - Toulouse</strong></p>
+					<p>Certification obtenu en septembre 2020</p><br>
+					<div class="btn-link-info"><a href="https://www.francecompetences.fr/recherche/rncp/31114/"> voir le référentielle de la certification</a></div><br>
+
+					<h3 class="section-title">Brevet de Technicien Supérieur en Bâtiment</h3>
+					<p>Centre de formation: <strong>Lycée Dhuoda - Nîmes</strong></p>
+					<p>Diplôme obtenu en 1999</p><br>
+
+					<h3 class="section-title">Bac STI option Génie Civil</h3>
+					<p>Centre de formation: <strong>Lycée sainte louise de marillac - Perpignan</strong></p>
+					<p>Diplôme obtenue en 1997</p><br>
+
+
+
+				</div>
+
+
+
+
+
+
+			</section>
+			<section>
+				<h2 class="section-title">Compétences</h2>
+				<div class="content">
+
+					<h3 class="section-title">Back-End</h3>
+					<ul>
+						<li><strong>Langages utilisés : </strong> PHP procédural et programmation orienté objet, SQL.</li>
+						<li><strong>Système de gestion de bases de données : </strong>phpmyadmin, mysql workbench.</li>
+						<li><strong>Framework : </strong>symphony 5, API plateform, nelmio, ExpressJS(bases), Nestjs(bases)</li>
+						<li><strong>Tests unitaires : </strong> PHPUnit.</li>
+					</ul><br>
+
+					<h3 class="section-title">Front-End</h3>
+					<ul>
+						<li><strong>Langages utilisés : </strong> HTML5, CSS3, Javascript ES6, TypeScript</li>
+						<li><strong>Moteurs de templates : </strong>Twig , smarty </li>
+						<li><strong>Framework Front en cours d'apprentissage : </strong>Vuejs 3</li>
+					</ul><br>
+
+					<h3 class="section-title">Système de gestion de contenu</h3>
+					<ul>
+						<li>Wordpress</li>
+					</ul><br>
+
+					<h3 class="section-title">annexes</h3>
+					<ul>
+						<li>Git, Github, gitLab, Jira, trello, Docker</li>
+					</ul><br>
+
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	.btn-link-info a
+	{
+		background-color:rgb(158, 94, 218);
+		padding: 5px 20px;
+		border-radius: 20px;
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.btn-link-info:hover
+	{
+
+		text-decoration: none;
+
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
